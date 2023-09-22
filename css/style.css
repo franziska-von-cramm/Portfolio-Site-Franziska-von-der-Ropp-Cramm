@@ -1,0 +1,141 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: #1D2C38;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    line-height: 1.5;
+    font-style: bold;
+    color: #1D2C38;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+    font-style: bold;
+    color: #326D72;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    font-style: bold;
+    color: #1D2C38;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.2;
+    font-style: normal;
+    color: #1D2C38;
+}
+
+img {
+    width: 100%;
+}
+
+.img-20 {
+    width: 20%;
+}
+
+#logo {
+    width: 25%;
+}
+
+.small-img {
+    width: 30px;
+}
+
+a {
+    color: blue;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 2px solid blue;
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+button,
+.button {
+    display: inline-block;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a.primary-button {
+    color: white;
+    text-decoration: unset;
+}
+
+.primary-button {
+    background-color: #329D9C;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #326D72;
+}
+
+.primary-button:focus {
+    outline: 2px solid blue;
+}
+
+.primary-button:active {
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #326D72;
+}
+
+a.secondary-button {
+    text-decoration: unset;
+    color: #326D72;
+}
+
+.secondary-button {
+    background-color: white;
+    color: #326D72;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #326D72;
+}
+
+.secondary-button:hover {
+    background-color: #326D72;
+    color: white;
+}
+
+.secondary-button:focus {
+    outline: 2px solid blue;
+}
+
+.secondary-button:active {
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #326D72;
+}
+
