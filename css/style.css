@@ -1,38 +1,86 @@
-body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: white;
-    color: #1D2C38;
+
+* {
+    box-sizing: border-box;
 }
 
-h1 {
+.container {
+    margin: 0 auto;
+    width:90vw;
+}
+
+.row {
+    margin: 25px 0;
+}
+
+.text-left {
+    text-align:start;
+}
+
+header {
+    background-color: #CCEEDF;
+    text-align:center;
+    position:fixed;
+    box-shadow: 5px 3px 8px 2px #0004;
+    width: 100%;
+}
+
+nav {
+    display:inline-block;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav ul > li {
+    display:inline-block;
+}
+
+nav ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:  #326D72;
+}
+nav ul > li > a:visited {
+    color:  #326D72;
+}
+
+main {
+    padding-top: 243px;
+}
+
+#hero {
+    background-color: #CCEEDF;
+    padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #1D2C38;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.5;
     font-style: bold;
     color: #1D2C38;
 }
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    line-height: 1.5;
-    font-style: bold;
-    color: #326D72;
+    color:  #326D72;
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 1.5rem;
     line-height: 1.2;
-    font-style: bold;
-    color: #1D2C38;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.2;
-    font-style: normal;
-    color: #1D2C38;
 }
 
 img {
@@ -44,55 +92,45 @@ img {
 }
 
 #logo {
-    width: 25%;
+    max-width: 150px;
 }
 
 .small-img {
     width: 30px;
 }
 
-a {
-    color: blue;
-    font-size: 16px;
+a, a:visited, a:focus {
+    color: #0000ff;
     text-decoration: none;
 }
 
-a:visited {
-    color: purple;
-}
-
 a:hover {
-    text-decoration: underline;
-}
-
-a:focus {
-    outline: 2px solid blue;
+    color: #0b0bb8;
     text-decoration: underline;
 }
 
 a:active {
-    color: red;
+    color: #ff0000;
 }
 
-button,
 .button {
     display: inline-block;
     border: none;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-size: 24px;
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
 }
 
 a.primary-button {
-    color: white;
+    color: #ffffff;
     text-decoration: unset;
 }
 
 .primary-button {
     background-color: #329D9C;
-    color: white;
+    color: #ffffff;
 }
 
 .primary-button:hover {
@@ -100,11 +138,11 @@ a.primary-button {
 }
 
 .primary-button:focus {
-    outline: 2px solid blue;
+    outline: 2px solid #0000ff;
 }
 
 .primary-button:active {
-    background-color: white;
+    background-color: #ffffff;
     border-width: 2px;
     border-style: solid;
     border-color: #326D72;
@@ -125,15 +163,15 @@ a.secondary-button {
 
 .secondary-button:hover {
     background-color: #326D72;
-    color: white;
+    color: #ffffff;
 }
 
 .secondary-button:focus {
-    outline: 2px solid blue;
+    outline: 2px solid #0000ff;
 }
 
 .secondary-button:active {
-    background-color: white;
+    background-color: #ffffff;
     border-width: 2px;
     border-style: solid;
     border-color: #326D72;
