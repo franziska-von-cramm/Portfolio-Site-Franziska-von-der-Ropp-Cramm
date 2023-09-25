@@ -9,33 +9,37 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,300&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap"
+        rel="stylesheet">
     <title>About Franziska</title>
 </head>
 
 <body>
     <header>
-        <img id="logo" src="img/logo_Franziska_von_der_Ropp_Cramm.svg" alt="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">My Work</a></li>
+        <div class="container">
+            <img id="logo" src="img/logo_Franziska_von_der_Ropp_Cramm.svg" alt="logo">
+            <nav>
                 <ul>
-                    <li><a href="index.html#project-1">Project-1</a></li>
-                    <li><a href="index.html#project-2">Project-2</a></li>
+                    <li><a href="index.html">My Work</a></li>
+                    <ul>
+                        <li><a href="oliveproject.html">Olive Project</a></li>
+                        <li><a href="everme.html">EverMe Project</a></li>
+                    </ul>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+            </nav>
+        </div>
     </header>
     <main>
         <section>
-            <div>
+            <div class="container">
                 <h1>About me</h1>
             </div>
         </section>
         <section>
-            <div>
+            <div class="container">
                 <img class="img-20" src="img/profilephoto.png" alt="my profile photo">
                 <div>
                     <div>
@@ -79,7 +83,7 @@
                     </div>
                     <div>
                         <h2>Skills and Tools</h2>
-                        <div>
+                        <div class="row">
                             <div>
                                 <h3>Relevant Skills</h3>
                                 <ul type="square">
@@ -109,7 +113,7 @@
             </div>
         </section>
         <section>
-            <div>
+            <div class="container">
                 <h2>Strengths and soft skills</h2>
                 <p>My professional experience has strengthened my soft skills, especially teamwork, communication skills
                     and
@@ -119,7 +123,7 @@
         </section>
     </main>
     <footer>
-        <div>
+        <div class="container">
             <p>© Franziska v. der Ropp-Cramm 2023</p>
         </div>
     </footer>
