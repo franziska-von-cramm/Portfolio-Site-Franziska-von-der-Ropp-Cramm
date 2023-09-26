@@ -22,10 +22,6 @@
             <nav>
                 <ul>
                     <li><a href="index.html">My Work</a></li>
-                    <ul>
-                        <li><a href="oliveproject.html">Olive Project</a></li>
-                        <li><a href="everme.html">EverMe Project</a></li>
-                    </ul>
                     <li><a href="aboutme.html">About Me</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -42,15 +38,37 @@
                 <p>Prefer sending an email?
                 </p>
                 <div>
-                    <a href="mailto:Franziska.von.Cramm@gmail.com" class="button secondary-button">✉ Write me</a>
-                </div>
-                <div>
-                    <a href="https://www.linkedin.com/in/franziska-von-der-ropp-cramm-749a36255/" target="_blank">
-                        <img class="small-img" src="img/linkedin_social_icon.svg">
-                    </a>
-                    <a href="https://www.xing.com/profile/Franziska_vderRoppCramm/cv?expandNeffi=true" target="_blank">
-                        <img class="small-img" src="img/xing.png">
-                    </a>
+                    <div class="row">
+                        <a href="mailto:Franziska.von.Cramm@gmail.com" class="button secondary-button">✉ E-Mail</a>
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/franziska-von-der-ropp-cramm-749a36255/" target="_blank">
+                            <img class="small-img" src="img/linkedin_social_icon.svg">
+                        </a>
+                        <a href="https://www.xing.com/profile/Franziska_vderRoppCramm/cv?expandNeffi=true"
+                            target="_blank">
+                            <img class="small-img" src="img/xing.png">
+                        </a>
+                    </div>
+                    <div class="container">
+                        <p>Feel free to write me a message
+                        </p>
+                        <form action="action_page.php">
+
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                            <label for="your Message">Your Message</label>
+                            <textarea id="subject" name="subject" placeholder="Write a message.."
+                                style="height:200px"></textarea>
+                            <div class="row">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>

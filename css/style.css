@@ -9,7 +9,7 @@
 }
 
 .row {
-    margin: 25px 0;
+    margin: 1.5rem 0;
 }
 
 .text-left {
@@ -38,7 +38,7 @@ nav ul > li {
 }
 
 nav ul > li > a {
-    padding: 0 15px;
+    padding: 0 12px;
     text-transform: uppercase;
     font-weight: 700;
     color:  #326D72;
@@ -48,11 +48,12 @@ nav ul > li > a:visited {
 }
 
 main {
-    padding-top: 243px;
+    padding-top: 205px;
 }
 
 #hero {
     background-color: #CCEEDF;
+    font-size:70%;
     padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -87,8 +88,8 @@ img {
     width: 100%;
 }
 
-.img-20 {
-    width: 20%;
+.img-25 {
+    width: 25%;
 }
 
 #logo {
@@ -177,3 +178,40 @@ a.secondary-button {
     border-color: #326D72;
 }
 
+footer {
+    background-color: #CCEEDF;
+    padding: 1rem 0;
+    text-align:center;
+    width: 100%
+}
+
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 1rem; 
+    border: 1px solid #326D72;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    resize: vertical;
+  }
+
+input[type=submit] {
+    display: inline-block;
+    background-color: white;
+    color: #326D72;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #326D72;  
+    border-radius: 2rem;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+  }
+
+input[type=submit]:hover {
+    background-color: #326D72;
+    color: #ffffff;
+  }
