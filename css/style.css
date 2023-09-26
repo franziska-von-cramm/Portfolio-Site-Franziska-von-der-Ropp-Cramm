@@ -188,7 +188,7 @@ a:active {
     border: none;
     padding: 0.6rem 1.2rem;
     border-radius: 2rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s background-color;
@@ -264,10 +264,15 @@ footer {
 }
 
 
+form {
+    max-width: 600px;
+}
+
 input[type=text],
 textarea {
     width: 100%;
     padding: 1rem;
+    margin-top: 1em;
     border: 1px solid #326D72;
     border-radius: 4px;
     box-sizing: border-box;
@@ -276,11 +281,15 @@ textarea {
     resize: vertical;
 }
 
+.override-textarea {
+    margin-top: 1rem;
+}
+
 input[type=submit] {
     display: inline-block;
     background-color: white;
     color: #326D72;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     border-width: 2px;
     border-style: solid;
