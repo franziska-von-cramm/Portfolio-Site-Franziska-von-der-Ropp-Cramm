@@ -24,6 +24,7 @@ header {
 
 nav {
     display: inline-block;
+    margin: 2rem;
 }
 
 nav ul {
@@ -57,10 +58,7 @@ main {
 
 #hero {
     background-color: #CCEEDF;
-    font-size: 70%;
     padding: 20px 0;
-    display: inline-block;
-    width: 100%;
 }
 
 body {
@@ -71,6 +69,10 @@ body {
     line-height: 1.2;
 }
 
+ul {
+    list-style-type: circle;
+}
+
 .no-margin {
     margin: 0;
 }
@@ -79,10 +81,15 @@ h1,
 h2,
 h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1.5;
-    font-style: bold;
+    font-weight: 700;
     color: #1D2C38;
+}
+
+#hero h1 span {
+    display: block;
+    margin-top: 1rem;
 }
 
 h2 {
@@ -96,6 +103,7 @@ h3 {
 
 img {
     width: 100%;
+    border-radius: 4px;
 }
 
 #logo {
@@ -119,6 +127,20 @@ img {
 
 .small-img {
     width: 30px;
+}
+
+.two-images {
+    display: flex;
+    gap: 1rem;
+    overflow: auto;
+}
+
+.two-images img {
+    max-width: 80vw;
+}
+
+.quote {
+    mix-blend-mode: darken;
 }
 
 @keyframes color-change {
@@ -186,13 +208,12 @@ a:active {
 .button {
     display: inline-block;
     border: none;
-    padding: 0.6rem 1.2rem;
+    padding: 0.6rem 1.6rem;
     border-radius: 2rem;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s background-color;
-
 }
 
 a.primary-button {
@@ -249,10 +270,11 @@ a.secondary-button {
     border-color: #326D72;
 }
 
-.line {
-    border-top: 2px solid #326D72;
+.card {
+    border: 2px solid #e1e7e7;
+    border-radius: 8px;
     padding: 24px;
-    margin-top: 0;
+    margin: 1.5rem;
 }
 
 footer {
