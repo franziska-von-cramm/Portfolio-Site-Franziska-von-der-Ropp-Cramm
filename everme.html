@@ -4,21 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,300&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap"
         rel="stylesheet">
-    <title>UI UX Design Portfolio Franziska v. der Ropp-Cramm</title>
+    <title>EverMe Project</title>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <img id="logo" src="img/logo_Franziska_von_der_Ropp_Cramm.svg" alt="logo">
+            <div class="header-row">
+                <a href="index.html"><img class="logo" id="logo" src="img/logo_Franziska_von_der_Ropp_Cramm.svg"
+                        alt="logo"></a>
+                <i class="fa-solid fa-bars hamburger fa-2xl" onclick="toggleNavMenu()"></i>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">My Work</a></li>
@@ -181,6 +187,7 @@
             <p>© Franziska v. der Ropp-Cramm 2023</p>
         </div>
     </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 
