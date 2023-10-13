@@ -46,7 +46,9 @@ header .container .header-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0.8rem 0;
 }
+
 
 nav ul {
     list-style-type: none;
@@ -127,7 +129,12 @@ svg {
 }
 
 #logo {
-    max-width: 100px;
+    max-width: 200px;
+    display: none;
+}
+
+#small-logo {
+    max-height: 40px;
 }
 
 #profile-picture {
@@ -309,7 +316,6 @@ a.secondary-button {
     border: 2px solid #e1e7e7;
     border-radius: 8px;
     padding: 24px;
-    margin: 1.5rem;
 }
 
 footer {
@@ -376,8 +382,16 @@ input[type=submit]:hover {
 
     header .container {
         flex-direction: row;
-        align-items: flex-end;
+        align-items: center;
         justify-content: space-between;
+    }
+
+    #small-logo {
+        display: none;
+    }
+
+    #logo {
+        display: block;
     }
 
     body {
