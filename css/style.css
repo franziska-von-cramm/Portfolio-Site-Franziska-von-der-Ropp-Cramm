@@ -5,15 +5,21 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #ffffff;
-    color: #1D2C38;
+    color: #000000;
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.5;
     display: flex;
     flex-direction: column;
 }
 
 .container {
     margin: 0 1rem;
+    max-width: 800px;
+}
+
+.line {
+    border: 1.5px solid #e1e7e7;
+    margin: 48px 0 24px 0;
 }
 
 .row {
@@ -23,17 +29,32 @@ body {
     margin: 1.5rem 0;
 }
 
+.row-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin: 1.5rem 0;
+}
+
+.row-project {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
 .text-left {
     text-align: start;
 }
 
 header {
-    background-color: #CCEEDF;
+    background-color: #e3f1f7;
     text-align: center;
     position: sticky;
     top: 0;
     box-shadow: 5px 3px 8px 2px #0004;
     width: 100%;
+    z-index: 1000;
 }
 
 header .container {
@@ -65,22 +86,22 @@ nav ul>li>a {
     padding: 0 12px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #326D72;
+    color: #000000;
     transition: 0.2s color;
+    font-size: 1rem;
 }
 
 nav ul>li>a:visited {
-    color: #326D72;
+    color: #000000;
 }
 
 nav ul>li>a:hover {
-    color: #1c2b38;
+    color: #D1884F;
 }
 
 #hero {
-    background-color: #CCEEDF;
-    padding: 50px 0;
-    background-image: url("../img/background_header_image.png");
+    background-color: #ffffff;
+    padding: 16px 0 0 0;
     background-size: cover;
 }
 
@@ -96,27 +117,47 @@ ul {
     margin: 0;
 }
 
+.subtitle {
+    font-size: 4rem;
+}
+
 h1,
 h2,
 h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    line-height: 1.5;
     font-weight: 700;
-    color: #1D2C38;
+    color: #000000;
+    margin: 16px 0;
 }
 
-#hero h1 span {
-    display: block;
+h1 {
+    color: #1a1a1a;
+    font-size: 32px;
 }
 
 h2 {
-    color: #326D72;
+    color: #008AAA;
 }
+
+
+.hero h1 span {
+    display: block;
+}
+
 
 h3 {
     font-size: 1.5rem;
-    line-height: 1.2;
+    color: #D1884F;
+}
+
+h4 {
+    color: #000000;
+    font-size: 18px;
+}
+
+.main-title {
+    color: #008AAA;
 }
 
 img {
@@ -137,8 +178,59 @@ svg {
     max-height: 40px;
 }
 
-#profile-picture {
-    max-width: 330px;
+.project-card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.project-card {
+    border: 2px solid #e1e7e7;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card__img {
+    position: relative;
+}
+
+.project-card__img .button {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.project-card__content {
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    grid-template-areas:
+        "title date"
+        "subtitle ."
+        "tools tools";
+}
+
+.project-card__content__title {
+    grid-area: title;
+}
+
+.project-card__content__subtitle {
+    grid-area: subtitle;
+}
+
+.project-card__content__date {
+    grid-area: date;
+    justify-self: flex-end;
+}
+
+.project-card__content__tools {
+    grid-area: tools;
+}
+
+
+.profile-picture {
+    max-width: 220px;
 }
 
 .project-logo {
@@ -160,6 +252,16 @@ svg {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+}
+
+.project-header-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.project-header-content>* {
+    margin: unset;
 }
 
 .everme-first-row .logo {
@@ -251,7 +353,7 @@ a:active {
     display: inline-block;
     border: none;
     padding: 0.6rem 1.6rem;
-    border-radius: 2rem;
+    border-radius: 0.4rem;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -264,40 +366,40 @@ a.primary-button {
 }
 
 .primary-button {
-    background-color: #329D9C;
+    background-color: #008AAA;
     color: #ffffff;
 }
 
 .primary-button:hover {
-    background-color: #326D72;
+    background-color: #3BBADB;
 }
 
 .primary-button:focus {
-    outline: 2px solid #0000ff;
+    outline: 1px solid #008AAA;
 }
 
 .primary-button:active {
     background-color: #ffffff;
     border-width: 2px;
     border-style: solid;
-    border-color: #326D72;
+    border-color: #018DB0;
 }
 
 a.secondary-button {
     text-decoration: unset;
-    color: #326D72;
+    color: #008AAA;
 }
 
 .secondary-button {
     background-color: white;
-    color: #326D72;
+    color: #008AAA;
     border-width: 2px;
     border-style: solid;
-    border-color: #326D72;
+    border-color: #008AAA;
 }
 
 .secondary-button:hover {
-    background-color: #326D72;
+    background-color: #008AAA;
     color: #ffffff;
 }
 
@@ -309,17 +411,17 @@ a.secondary-button {
     background-color: #ffffff;
     border-width: 2px;
     border-style: solid;
-    border-color: #326D72;
+    border-color: #008AAA;
 }
 
 .card {
-    border: 2px solid #e1e7e7;
+    border: 4px solid #e1e7e7;
     border-radius: 8px;
     padding: 24px;
 }
 
 footer {
-    background-color: #CCEEDF;
+    background-color: #e3f1f7;
     padding: 1rem 0;
     margin-top: 2rem;
     text-align: center;
@@ -333,14 +435,15 @@ form {
 
 input[type=text],
 textarea {
+    font-size: 16px;
     width: 100%;
     padding: 1rem;
-    margin-top: 1em;
-    border: 1px solid #326D72;
+    margin-top: 3em;
+    border: 2px solid #e1e7e7;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0.7rem;
+    margin-bottom: 1.5rem;
     resize: vertical;
 }
 
@@ -351,23 +454,27 @@ textarea {
 input[type=submit] {
     display: inline-block;
     background-color: white;
-    color: #326D72;
+    color: #008AAA;
     font-size: 1rem;
     font-weight: bold;
     border-width: 2px;
     border-style: solid;
-    border-color: #326D72;
-    border-radius: 2rem;
+    border-color: #008AAA;
+    border-radius: 0.4rem;
     padding: 0.6rem 1.2rem;
     cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: #326D72;
+    background-color: #008AAA;
     color: #ffffff;
 }
 
 @media only screen and (min-width: 640px) {
+    .project-card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
     header {
         text-align: unset;
     }
@@ -405,6 +512,18 @@ input[type=submit]:hover {
     .row {
         flex-direction: row;
     }
+
+    .row-text {
+        flex-direction: row;
+    }
+
+    .row-text>* {
+        flex: 1;
+    }
+
+    .row-project {
+        flex-direction: row;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -412,6 +531,7 @@ input[type=submit]:hover {
     .col-lg-7 {
         width: 58.33%;
     }
+
 
     .col-lg-5 {
         width: 41.66%;
@@ -422,5 +542,23 @@ input[type=submit]:hover {
         padding-right: 1rem;
         max-width: 1200px;
         margin: 0 auto;
+    }
+
+    .project-card {
+        border: 3px solid #e1e7e7;
+    }
+}
+
+@media only screen and (min-width: 2100px) {
+    .container {
+        max-width: 1800px;
+    }
+
+    .project-card-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .project-card {
+        border: 4px solid #e1e7e7;
     }
 }
