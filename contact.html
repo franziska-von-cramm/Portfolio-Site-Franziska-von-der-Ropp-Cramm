@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/utils.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -37,41 +38,54 @@
         </div>
     </header>
     <main>
+        <section id="hero">
+            <div class="container">
+                <div class="row-project">
+                    <img class="profile-picture" src="img\profilephoto.svg" alt="profile picture website">
+                    <div class="project-header-content">
+                        <h1 class="subtitle main-title">Contact</h1>
+                        <h3>Let's Talk</h3>
+
+                        <div class="flex-grow"></div>
+                        <div class="flex gap-1 align-self-end">
+                            <a href="https://www.linkedin.com/in/franziska-von-der-ropp-cramm-749a36255/"
+                                target="_blank">
+                                <img class="small-img" src="img/linkedin_social_icon.svg">
+                            </a>
+                            <a href="https://www.xing.com/profile/Franziska_vderRoppCramm/cv?expandNeffi=true"
+                                target="_blank">
+                                <img class="small-img" src="img/xing.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+        </section>
         <section>
             <div class="container">
-                <h1>Contact</h1>
-                <div>
-                    <a href="https://www.linkedin.com/in/franziska-von-der-ropp-cramm-749a36255/" target="_blank">
-                        <img class="small-img" src="img/linkedin_social_icon.svg">
-                    </a>
-                    <a href="https://www.xing.com/profile/Franziska_vderRoppCramm/cv?expandNeffi=true" target="_blank">
-                        <img class="small-img" src="img/xing.png">
-                    </a>
-                </div>
-                <div>
-                    <p>Do you like my work and want to discuss opportunities? Please get in touch.</p>
-
-                    <form action="action_page.php">
-
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                        <label for="your Message">Your Message</label>
-                        <textarea id="subject" class="override-textarea" name="subject" placeholder="Write a message.."
-                            style="height:200px"></textarea>
+                <h2>Write me a E-Mail</h2>
+                <div class="row-text">
+                    <div class="flex-grow">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="lname" name="name" placeholder="Your name..">
+                        <label for="e-mail">E-Mail</label>
+                        <input type="text" name="email" placeholder="Your Email..">
+                        <label for="Subject">Subject</label>
+                        <input type="text" name="subject" placeholder="Subject..">
                         <div class="row">
                             <input type="submit" value="Submit">
                         </div>
-                    </form>
+                    </div>
+                    <div class="flex-grow">
+                        <label for="your Message">Your Message</label>
+                        <textarea id="subject" class="override-textarea" name="subject" placeholder="Write a message.."
+                            style="height:276px"></textarea>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <img class="quote" src="img\quote_image.png" alt="quote image">
         <div class="container">
             <p>© Franziska v. der Ropp-Cramm 2023</p>
         </div>
