@@ -113,19 +113,18 @@ ul {
     list-style-type: circle;
 }
 
-.no-margin {
-    margin: 0;
+.spaced-list li:not(:last-child) {
+    margin-bottom: 1rem;
 }
 
-.subtitle {
-    font-size: 4rem;
+.no-margin {
+    margin: 0;
 }
 
 h1,
 h2,
 h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
     font-weight: 700;
     color: #000000;
     margin: 16px 0;
@@ -138,8 +137,8 @@ h1 {
 
 h2 {
     color: #008AAA;
+    font-size: 24px;
 }
-
 
 .hero h1 span {
     display: block;
@@ -147,17 +146,13 @@ h2 {
 
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 20px;
     color: #D1884F;
 }
 
 h4 {
     color: #000000;
     font-size: 18px;
-}
-
-.main-title {
-    color: #008AAA;
 }
 
 img {
@@ -263,6 +258,18 @@ svg {
 .project-header-content>* {
     margin: unset;
 }
+
+.project-header-content h1 {
+    color: #008AAA;
+    font-size: 4rem;
+}
+
+.project-header-content .subtitle {
+    font-size: 1.5rem;
+    color: #D1884F;
+    font-weight: bold;
+}
+
 
 .everme-first-row .logo {
     padding-top: 4rem;
