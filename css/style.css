@@ -96,7 +96,7 @@ nav ul>li>a:visited {
 }
 
 nav ul>li>a:hover {
-    color: #D1884F;
+    color: #bd7741;
 }
 
 #hero {
@@ -137,7 +137,7 @@ h1 {
 }
 
 h2 {
-    color: #008AAA;
+    color: #037791;
     font-size: 24px;
 }
 
@@ -148,7 +148,7 @@ h2 {
 
 h3 {
     font-size: 20px;
-    color: #D1884F;
+    color: #bd7741;
 }
 
 h4 {
@@ -261,13 +261,13 @@ svg {
 }
 
 .project-header-content h1 {
-    color: #008AAA;
+    color: #037791;
     font-size: 4rem;
 }
 
 .project-header-content .subtitle {
     font-size: 1.5rem;
-    color: #D1884F;
+    color: #bd7741;
     font-weight: bold;
 }
 
@@ -395,19 +395,19 @@ a.primary-button {
 
 a.secondary-button {
     text-decoration: unset;
-    color: #008AAA;
+    color: #037791;
 }
 
 .secondary-button {
     background-color: white;
-    color: #008AAA;
+    color: #037791;
     border-width: 2px;
     border-style: solid;
-    border-color: #008AAA;
+    border-color: #037791;
 }
 
 .secondary-button:hover {
-    background-color: #008AAA;
+    background-color: #037791;
     color: #ffffff;
 }
 
@@ -419,7 +419,7 @@ a.secondary-button {
     background-color: #ffffff;
     border-width: 2px;
     border-style: solid;
-    border-color: #008AAA;
+    border-color: #037791;
 }
 
 .card {
@@ -462,19 +462,19 @@ textarea {
 input[type=submit] {
     display: inline-block;
     background-color: white;
-    color: #008AAA;
+    color: #037791;
     font-size: 1rem;
     font-weight: bold;
     border-width: 2px;
     border-style: solid;
-    border-color: #008AAA;
+    border-color: #037791;
     border-radius: 0.4rem;
     padding: 0.6rem 1.2rem;
     cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: #008AAA;
+    background-color: #037791;
     color: #ffffff;
 }
 
