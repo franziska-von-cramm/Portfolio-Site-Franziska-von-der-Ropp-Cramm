@@ -261,7 +261,7 @@ svg {
 }
 
 .project-header-content h1 {
-    color: #006c85;
+    color: #00576b;
     font-size: 4rem;
 }
 
@@ -374,12 +374,12 @@ a.primary-button {
 }
 
 .primary-button {
-    background-color: #008AAA;
+    background-color: #00576b;
     color: #ffffff;
 }
 
 .primary-button:hover {
-    background-color: #3BBADB;
+    background-color: #008AAA;
 }
 
 .primary-button:focus {
@@ -388,26 +388,24 @@ a.primary-button {
 
 .primary-button:active {
     background-color: #ffffff;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #018DB0;
+    color: #ffffff
 }
 
 a.secondary-button {
     text-decoration: unset;
-    color: #006c85;
+    color: #00576b;
 }
 
 .secondary-button {
     background-color: white;
-    color: #006c85;
+    color: #00576b;
     border-width: 2px;
     border-style: solid;
-    border-color: #006c85;
+    border-color: #00576b;
 }
 
 .secondary-button:hover {
-    background-color: #006c85;
+    background-color: #00576b;
     color: #ffffff;
 }
 
@@ -419,7 +417,7 @@ a.secondary-button {
     background-color: #ffffff;
     border-width: 2px;
     border-style: solid;
-    border-color: #037791;
+    border-color: #00576b;
 }
 
 .card {
@@ -462,19 +460,19 @@ textarea {
 input[type=submit] {
     display: inline-block;
     background-color: white;
-    color: #006c85;
+    color: #00576b;
     font-size: 1rem;
     font-weight: bold;
     border-width: 2px;
     border-style: solid;
-    border-color: #006c85;
+    border-color: #00576b;
     border-radius: 0.4rem;
     padding: 0.6rem 1.2rem;
     cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: #006c85;
+    background-color: #00576b;
     color: #ffffff;
 }
 
