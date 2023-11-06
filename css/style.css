@@ -137,7 +137,7 @@ h1 {
 }
 
 h2 {
-    color: #037791;
+    color: #006c85;
     font-size: 24px;
 }
 
@@ -261,7 +261,7 @@ svg {
 }
 
 .project-header-content h1 {
-    color: #037791;
+    color: #006c85;
     font-size: 4rem;
 }
 
@@ -395,19 +395,19 @@ a.primary-button {
 
 a.secondary-button {
     text-decoration: unset;
-    color: #037791;
+    color: #006c85;
 }
 
 .secondary-button {
     background-color: white;
-    color: #037791;
+    color: #006c85;
     border-width: 2px;
     border-style: solid;
-    border-color: #037791;
+    border-color: #006c85;
 }
 
 .secondary-button:hover {
-    background-color: #037791;
+    background-color: #006c85;
     color: #ffffff;
 }
 
@@ -462,19 +462,19 @@ textarea {
 input[type=submit] {
     display: inline-block;
     background-color: white;
-    color: #037791;
+    color: #006c85;
     font-size: 1rem;
     font-weight: bold;
     border-width: 2px;
     border-style: solid;
-    border-color: #037791;
+    border-color: #006c85;
     border-radius: 0.4rem;
     padding: 0.6rem 1.2rem;
     cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: #037791;
+    background-color: #006c85;
     color: #ffffff;
 }
 
