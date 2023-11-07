@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/utils.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,8 +23,9 @@
         <div class="container">
             <div class="header-row">
                 <a href="index.html">
-                    <img class="logo" id="logo" src="img/logo_Franziska_von_der_Ropp_Cramm.svg" alt="logo">
-                    <img class="logo" id="small-logo" src="img/logo_small_Franziska_von_der_Ropp_Cramm.svg" alt="logo">
+                    <img class="logo" id="logo" src="img/logo_Franziska_von_der_Ropp_Cramm.svg" alt="personal logo">
+                    <img class="logo" id="small-logo" src="img/logo_small_Franziska_von_der_Ropp_Cramm.svg"
+                        alt="personal small logo">
                 </a>
                 <i class="fa-solid fa-bars hamburger fa-2xl" onclick="toggleNavMenu()"></i>
             </div>
@@ -37,92 +39,118 @@
         </div>
     </header>
     <main>
-        <section>
+        <section id="hero">
             <div class="container">
-                <h1>About me</h1>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <img id="profile-picture" src="img/profilephoto.png" alt="my profile photo">
-                <div>
-                    <div>
-                        <h2>My Story</h2>
-                        <p>My name is Franziska v. der Ropp-Cramm, I am 28 years old and I am passionate aboutUI/UX
-                            Design.</p>
-                        <p>My professional career started with a studies in Game Art and 3D Animation at the SAE
-                            Institute
-                            in Stuttgart,which I successfully completed until September 2019.</p>
-                        <p>After my bachelor studies which I finished with the highest grade (1st class), I was lucky
-                            enough to apply my acquired knowledge and skills as a 3D Artist at AR-Werk GmbH.
-                            In this position I was able to expand my knowledge in the 3D field and at the same time I
-                            developed a strong interest in web design and application design.
-                            Since AR-Werk GmbH was a startup, I also took on cross-positional tasks that allowed me to
-                            take my first professional steps in the field of UI/UX design.</p>
-                        <p>Unfortunately, my employment ended during the Corona pandemic, a time that provided many
-                            challenges, especially in finding a suitable position as a 3D artist.
-                            During this time, however, a strong desire developed in me to delve more deeply into UI/UX
-                            design and acquire further skills in this area. For this reason,
-                            I participated in various UI/UX online courses on the platform Udemy, started a voluntary
-                            project on wix.com and decided to take the full-time course "UX Design Program" from
-                            Careerfoundry.
-                            During this highly practical course, I gained extensive insight into the varied tasks and
-                            activities of a UX designer and had the opportunity to put user-centered designs into
-                            practice.
-                            The highlight of my work during this course was undoubtedly the development of my own
-                            interactive prototype - Olive, the health app.</p>
-                        <p>Being employed by Seeburger AG made me realize how important it is, as a designer, to follow
-                            the processes and procedures of the developers to ensure a smooth workflow in order to
-                            create innovative and user-centered solutions.
-                            For this reason, I decided to deal more intensively with frontend development and to gain
-                            additional competencies in this area through further education. </p>
-                        <p>Currently, I am therefore now attending the full-time online course "Frontend Development for
-                            Designers" via the platform CareerFoundry, which started on 11.09. and has a duration of 2
-                            months.
-                            In this course, which is also very practice-oriented, I am learning how to use HTML, CSS and
-                            JavaScript on my own in order to further deepen my skills as a UI/UX designer.
-                        </p>
+                <div class="row-project">
+                    <img class="profile-picture" src="img\profilephoto.png" alt="profile picture website">
+                    <div class="project-header-content">
+                        <h1>About Me</h1>
+                        <div class="subtitle">Who Am I</div>
+                        <div class="flex-grow"></div>
                         <a href="https://www.canva.com/design/DAFuzuwqrLU/M0Y5BtYhMH6PFMUHV6Le0g/view?utm_content=DAFuzuwqrLU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
-                            class="button secondary-button">My CV</a>
-                    </div>
-                    <div>
-                        <h2>Skills and Tools</h2>
-                        <div class="row">
-                            <div>
-                                <h3>Relevant Skills</h3>
-                                <ul type="square">
-                                    <li>UI Design</li>
-                                    <li>UX Design</li>
-                                    <li>User Research</li>
-                                    <li>Design Thinking</li>
-                                    <li>Design System</li>
-                                    <li>Wireframing</li>
-                                    <li>Prototyping</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3>Tools</h3>
-                                <ul type="square">
-                                    <li>Figma</li>
-                                    <li>Adobe XD</li>
-                                    <li>InVision</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                </ul>
-                            </div>
-                        </div>
+                            class="align-self-end button secondary-button">My CV</a>
                     </div>
                 </div>
             </div>
         </section>
+        <hr class="line">
         <section>
             <div class="container">
-                <h2>Strengths and soft skills</h2>
-                <p>My professional experience has strengthened my soft skills, especially teamwork, communication skills
-                    and
-                    personal responsibility. I am highly motivated, possess a high level of creativity and have a strong
-                    willingness to learn, which enables me to face new challenges with enthusiasm and determination.</p>
+                <div class="row-text">
+                    <div>
+                        <h2>About Me</h2>
+                        <p>My name is Franziska v. der Ropp-Cramm and I am 28 years old. After my bachelor studies,
+                            which I finished with the best grade in 2019,
+                            I had the opportunity to apply my acquired knowledge and skills as a 3D artist at
+                            AR-Werk GmbH. Since AR-Werk GmbH was a startup,
+                            I also took on cross-job tasks that gave me my first insights and professional steps in
+                            the field of UI/UX design. In this way,
+                            I was able to expand my expertise in 3D while developing a strong interest in web and
+                            application design.
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Motivation</h2>
+                        <p>My professional goal changed when I was employed by AR-Werk because I had insights into
+                            the field of UI/UX design.
+                            I have discovered a new field of interest, which gave me a lot of pleasure in its
+                            implementation.
+                            A desire has arisen in me to further explore UI/UX design and gain more knowledge in
+                            this field.
+                        </p>
+                        <ul>
+                            <li>Adobe XD course Udemy</li>
+                            <li>Website project on wix.com</li>
+                            <li>UX Design Program course via Career Foundry</li>
+                            <li>Frontend Development Course via Career Foundry (especially for designers)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row-text">
+                    <div>
+                        <h2>Programms</h2>
+                        <p>Programs I am currently proficient in are:
+                        </p>
+                        <ul>
+                            <li>Adobe Illustrator</li>
+                            <li> Adobe XD</li>
+                            <li>InVision</li>
+                            <li>Figma</li>
+                            <li>HTML, CSS, JavaScript</li>
+                        </ul>
+                        <p>My Softskills are:</p>
+                        <ul>
+                            <li>Ability to work in a team</li>
+                            <li>Communication skills</li>
+                            <li>personal responsibility</li>
+                            <li>Good willingness to learn</li>
+                            <li>Motivational</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Abilities</h2>
+                        <p>Through my experiences from my last jobs, as well as the hands-on courses and projects, I
+                            was able to gain experience in all areas:
+                        </p>
+                        <ul>
+                            <li>Performing analysis, competitive and target group analysis, interviews and surveys
+                                to develop user-centric products.</li>
+                            <li>Creating User Personas, User Stories & User Flows</li>
+                            <li>Creating mockups, wireframes and interactive prototypes</li>
+                            <li>Conducting usability tests and A/B tests to optimize usability (Jakob Nielsen rating
+                                table)</li>
+                            <li>Creating high-quality product designs with accessibility in mind (Material Design
+                                Guidelines)</li>
+                            <li>Creating and maintaining design systems (design tokens)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row-text">
+                    <div>
+                        <h2>UX Design Program - Career Foundry</h2>
+                        <p>During this highly hands-on course, I gained extensive insight into the varied tasks and
+                            activities
+                            of a UX designer and had the opportunity to put user-centered designs into practice.
+                            The highlight of my work during this course was undoubtedly the development of my own
+                            interactive prototype - Olive, the health app.
+                        </p>
+                    </div>
+                    <div>
+                        <p>Being employed at Seeburger AG as a UI Designer/ Visual Designer made me realize how
+                            important it is as a designer to be
+                            able to follow the processes and workflows of the developers to ensure a smooth workflow
+                            and thus create innovative and user-centered solutions.
+                            Therefore, I decided to deal more intensively with frontend development and to gain
+                            additional competencies in this area through further education.
+                        </p>
+                        <p>In the context of this advanced training I program my portfolio site from scratch with
+                            HTML, CSS and Java Script with all important functions and content.
+                            I will continue to maintain it after the completion of the training and take up new
+                            projects.
+
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

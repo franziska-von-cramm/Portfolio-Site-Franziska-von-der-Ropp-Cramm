@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/utils.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,8 +23,9 @@
         <div class="container">
             <div class="header-row">
                 <a href="index.html">
-                    <img class="logo" id="logo" src="img/logo_Franziska_von_der_Ropp_Cramm.svg" alt="logo">
-                    <img class="logo" id="small-logo" src="img/logo_small_Franziska_von_der_Ropp_Cramm.svg" alt="logo">
+                    <img class="logo" id="logo" src="img/logo_Franziska_von_der_Ropp_Cramm.svg" alt="personal logo">
+                    <img class="logo" id="small-logo" src="img/logo_small_Franziska_von_der_Ropp_Cramm.svg"
+                        alt="personal small logo">
                 </a>
                 <i class="fa-solid fa-bars hamburger fa-2xl" onclick="toggleNavMenu()"></i>
             </div>
@@ -37,43 +39,54 @@
         </div>
     </header>
     <main>
-        <section>
+        <section id="hero">
             <div class="container">
-                <h1>EverMe Project</h1>
-                <div class="row everme-first-row">
-                    <div>
-                        <h2>Project Overview</h2>
-                        <p>EverMe is a website where memorial pages can be created, regardless of whether it is about a
-                            deceased relative or the beloved pet.
-                        </p>
-                        <p>In addition to the possibility to create memorial pages,
-                            there is also a store where a created memorial page can be connected with a QR code product
-                            for
-                            the gravestone.
-                            The website is thus intended to help the mourner in a convenient way to commemorate in a
-                            timely
-                            manner and to preserve memories.
-                        </p>
-                        <p>EverMe is a fictional website created by me. I started the website as a voluntary practice
-                            project in 2021 in wix.com.
-                            After the UX design course on the CareerFoundry platform, I redesigned the project again in
-                            Figma.
-                            In this process, I did user research after the fact and created user personas. When creating
-                            the
-                            designs,
-                            I also mainly followed guidelines from Material Design.
-                        </p>
-                    </div>
-                    <div class="logo">
-                        <img class="project-logo" src="img\everme_logo.png" alt="everme logo">
+                <div class="row-project">
+                    <img class="profile-picture" src="img/everme_logo.png"
+                        alt="project cover image olive project website">
+                    <div class="project-header-content">
+                        <h1>EverMe</h1>
+                        <div class="subtitle">Memorial Website</div>
+                        <div class="flex-grow"></div>
+                        <a class="button primary-button align-self-end"
+                            href="https://www.figma.com/proto/yK6DdKrjejGK8C8fIVmC04/Gedenkseiten?page-id=153%3A8113&type=design&node-id=153-9293&viewport=-261%2C1668%2C0.07&t=vDNjCmTa0bUILThV-1&scaling=min-zoom&starting-point-node-id=153%3A9293&mode=design"
+                            target="_blank">Go to Prototype</a>
                     </div>
                 </div>
-                <div class="row">
+            </div>
+            <div class="container">
+                <hr class="line">
+                <h2>Project Overview</h2>
+                <div class="row-text">
+                    <div>
+                        <h3>The Story</h3>
+                        <p>EverMe is a website where memorial pages can be created, regardless of whether it is
+                            about a deceased relative or the beloved pet.
+                        </p>
+                        <p>In addition to the possibility to create memorial pages, there is also a store where a
+                            created memorial page can be
+                            connected with a QR code product for the gravestone. The website is thus intended to
+                            help the mourner in a convenient
+                            way to commemorate in a timely manner and to preserve memories.
+                        </p>
+                    </div>
+                    <div>
+                        <p>Bei EverMe handelt es sich um eine von mir erstellte fiktive Webseite.
+                            Ich habe die Webseite als freiwilliges Übungsprojekt 2021 in wix.com gestartet.
+                            Nach dem UX Design Kurs über die Plattform CareerFoundry habe ich das Projekt nochmal
+                            neu in Figma Redesigned.
+                            In diesem Prozess habe ich nachträglich User Research betrieben und User Personas
+                            erstellt. Bei der Erstellung
+                            der Designs habe ich mich zudem hauptsächlich an Richtlinien von Material Design
+                            orientiert.</p>
+                    </div>
+                </div>
+                <div class="row-text">
                     <div>
                         <h3>Programms</h3>
                         <ul>
-                            <li>Adobe XD</li>
-                            <li>Canva.com</li>
+                            <li>Figma</li>
+                            <li>Canva</li>
                         </ul>
                     </div>
                     <div>
@@ -85,23 +98,23 @@
                         </ul>
                     </div>
                     <div>
-                        <h3>Timeline</h3>
+                        <h3>Time schedule</h3>
                         <ul>
-                            <li>Project launched 2021 via wix.com</li>
+                            <li>Project started 2021 via wix.com</li>
                             <li>In Figma Redesigned August - October 2022</li>
+                            <li>Design & Testing: 8 weeks</li>
                         </ul>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
+                <hr class="line">
                 <h2>User Research</h2>
-                <div class="row">
+                <div class="row-text">
                     <div>
                         <h3>Competitive analysis</h3>
-                        <p>To begin, I searched the market for similar memorial sites. The focus of the analyses was on:
-                        </p>
+                        <p>To begin, I researched for similar grief sites that are currently on the market and
+                            analyzed them in their structure and features.
+                            Since the market is saturated and many websites are similar in their basic principle,
+                            I focused my analysis on certain factors like:</p>
                         <ul>
                             <li>Popularity</li>
                             <li>Special/unique features</li>
@@ -109,78 +122,116 @@
                         </ul>
                     </div>
                     <div>
-                        <h4>Analyzed websites:</h4>
+                        <h3>Analyzed websites</h3>
                         <ul>
-                            <li>Gedenkseiten.de</li>
-                            <li>e-memoria.de</li>
+                            <li>memoria.com</li>
+                            <li>e-memoria.com</li>
                         </ul>
                         <p>Gedenkseiten.de is by far the most popular and well-known website for memorial pages.
-                            It has by far a high number of active users compared to similar services.
-                        </p>
-                        <p>e-memoria.de is a lesser-known website, but it stands out for its special function of
-                            providing QR codes for the gravestone with the memorial pages it creates.
-                            A function that has a particularly positive effect on the ratings.
-                        </p>
+                            It has by far a high number of active users compared to similar services.</p>
+                        <p>e-memoria.de is a lesser-known website, but is characterized by its special function
+                            of providing QR codes
+                            for the gravestone with the memorial pages created. A function that has a
+                            particularly positive effect on the ratings.</p>
+                    </div>
+                </div>
+
+                <h3>User Stories</h3>
+                <div class="row-text">
+                    <ul class="spaced-list">
+                        <li>As a user, I would like to be able to add other media such as pictures,
+                            videos and poems in addition to memorial texts to make the memorial page more
+                            personal and to capture special moments and
+                            memories of the deceased.</li>
+                        <li>As a loved one, I would like a digital QR code to be on the headstone so that the
+                            life of the deceased can be shared with
+                            those who wish it not to be forgotten.</li>
+                    </ul>
+                    <ul class="spaced-list">
+                        <li>As an elderly user, I would like to be able to easily navigate a clear menu on the
+                            website to be able to create a memorial page without much effort or technical
+                            knowledge.</li>
+                        <li>As a user I want to be able to choose whether the animal memorial pages or the human
+                            memorial pages are displayed, to see only the content that interests me and not get
+                            lost in the confusion.</li>
+                    </ul>
+                </div>
+
+                <hr class="line">
+                <h1>Concept</h1>
+                <div class="row-text">
+                    <div>
+                        <img src="img\everme_project_user_persona.png" alt="user persona miriam">
                     </div>
                 </div>
             </div>
         </section>
         <section>
             <div class="container">
-                <h2>Concept</h2>
-                <h3>User Personas</h3>
-                <p>In the next step, I created a user persona that helps me put myself in the shoes of my target
-                    users and design the website according to their needs and desires.
-                </p>
-                <img src="img/everme_project_user_persona.PNG" alt="user persona miriam">
-            </div>
-        </section>
-        <section>
-            <div class="container">
+                <hr class="line">
                 <h2>Design</h2>
-                <div class="row">
+                <div class="row-text">
                     <div>
                         <h3>Redesign</h3>
-                        <p>I originally created the website using the wix.com platform in a modular system.
-                            For practice purposes I decided to re-design the website in Figma. I used the known
-                            guidelines
-                            of Material Design for the design.
+                        <p>Originally I created the website using the platform wix.com in a modular system.
+                            For training purposes I decided to redesign the website in Figma. I used the known
+                            guidelines of Material Design for the design.
                         </p>
                     </div>
                     <div>
-                        <h3>The structure</h3>
-                        <p>During the redesign process, I largely retained the structure of the website. With the
+                        <h3>The Structure</h3>
+                        <p>During the redesign process I kept most of the structure of the website. With the
                             information from the analyses,
                             user stories and user personas, I was able to add useful details and information to the
-                            website in order to create a product that always has the user and his wishes in mind.
-                        </p>
+                            website in order to create a
+                            product that always has the user and his wishes in mind.</p>
                     </div>
-                </div>
-                <div>
-                    <img src="img/everme_project_redesign_image.PNG" alt="Redesign Image">
-                    <p>To simplify the process, I created most of the elements and components using auto layouts and
-                        constraints.
-                        This makes it much easier to add or delete elements after the fact, as the entire design
-                        adjusts automatically.
-                    </p>
                 </div>
             </div>
         </section>
         <section>
             <div class="container">
+                <div class="row-text">
+                    <div>
+                        <img src="img/everme_project_redesign_image.PNG" alt="Redesign Image">
+                    </div>
+                    <div>
+                        <p>To simplify the process, I created most of the elements and components using auto layouts
+                            and constraints. This makes it much easier to add or delete elements after the fact, as
+                            the entire design
+                            adjusts automatically.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <hr class="line">
                 <h2>Conclusion</h2>
-                <h3>User centered design</h3>
-                <p>Although I have already started this project once before via the wix.com platform, I have
-                    been
-                    able to develop the project enormously in its function and presentation.
-                    Even though both versions are still similar in their basic structure, some usability
-                    problems of
-                    the predecessor could be uncovered and corrected.
-                </p>
-                <h3>Prototype</h3>
-                <a class="button primary-button"
-                    href="https://www.figma.com/proto/yK6DdKrjejGK8C8fIVmC04/Gedenkseiten?page-id=153%3A8113&type=design&node-id=153-9293&viewport=-261%2C1668%2C0.07&t=vDNjCmTa0bUILThV-1&scaling=min-zoom&starting-point-node-id=153%3A9293&mode=design"
-                    target="_blank">Go to Prototype</a>
+                <div class="row-text">
+                    <div>
+                        <h3>User centered design</h3>
+                        <p>Although I have already started this project once before via the wix.com platform,
+                            I have been able to develop the project enormously in its function and presentation.
+                            Even though both versions are still similar in their basic structure, some usability
+                            problems of the predecessor could be uncovered and corrected.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Findings</h3>
+                        <p>Starting the project again was a lot of fun and showed me that there is always room for
+                            improvement.
+                            Even now the project is still expandable. Many of the functions I have not developed to
+                            the end,
+                            because it would have blown up the time frame I had available.
+                        </p>
+                        <p>Also, this project makes it clear to me once again that UI and UX design should not be
+                            considered separately, but belong together.
+                            In interaction, problems can be identified and the maximum potential of an application
+                            can be extracted.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

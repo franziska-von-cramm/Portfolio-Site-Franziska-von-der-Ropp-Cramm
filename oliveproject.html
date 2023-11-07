@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/utils.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,8 +23,9 @@
         <div class="container">
             <div class="header-row">
                 <a href="index.html">
-                    <img class="logo" id="logo" src="img/logo_Franziska_von_der_Ropp_Cramm.svg" alt="logo">
-                    <img class="logo" id="small-logo" src="img/logo_small_Franziska_von_der_Ropp_Cramm.svg" alt="logo">
+                    <img class="logo" id="logo" src="img/logo_Franziska_von_der_Ropp_Cramm.svg" alt="personal logo">
+                    <img class="logo" id="small-logo" src="img/logo_small_Franziska_von_der_Ropp_Cramm.svg"
+                        alt="personal small logo">
                 </a>
                 <i class="fa-solid fa-bars hamburger fa-2xl" onclick="toggleNavMenu()"></i>
             </div>
@@ -37,36 +39,49 @@
         </div>
     </header>
     <main>
+        <section id="hero">
+            <div class="container">
+                <div class="row-project">
+                    <img class="profile-picture" src="img/logo_olive_project.svg"
+                        alt="project cover image olive project website">
+                    <div class="project-header-content">
+                        <h1>Olive Project</h1>
+                        <div class="subtitle">Health App</div>
+                        <div class="flex-grow"></div>
+                        <a class="align-self-end button primary-button"
+                            href="https://www.figma.com/proto/JUJVK3aKlLyoq8AsKf203m/OLIVE-App?page-id=2%3A2&type=design&node-id=93-2424&viewport=380%2C1530%2C0.34&scaling=scale-down&starting-point-node-id=93%3A2424"
+                            target="_blank">Go to Prototype</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+        </section>
         <section>
             <div class="container">
-                <div class="row">
+                <h2>Project Overview</h2>
+                <div class="row-text">
                     <div>
-                        <h1>Olive project</h1>
-                        <h2>Project Overview</h2>
-                        <p>OLIVE is a responsive health app. In addition to being able to set goals and new habits to
-                            improve lifestyle,
-                            users should also be able to have live video calls with coaches or doctors to improve their
-                            health.
+                        <h3>The Story</h3>
+                        <p>As a Carrerfoundry student in the UX design immersion course, I had the task of designing a
+                            responsive web app.
                         </p>
-                    </div>
-                    <img class="project-logo" src="img\logo_olive_project.svg" alt="olive logo">
-                </div>
-                <div class="row">
-                    <div>
-                        <h3>Problem Statements</h3>
-                        <p>Especially people who are exposed toa lot of stress in their professional or private
-                            life need a way to acquire a better lifestyle with new goals and habits.
+                        <p>I decided to use the OLIVE Health app. In addition to allowing users to set goals and new
+                            habits to improve their lifestyle,
+                            the app also needed to allow users to make live video calls with coaches or doctors to
+                            improve their health.
                         </p>
                     </div>
                     <div>
-                        <h3>Solution</h3>
-                        <p>The Olive app offers users the ability to easily monitor their core motivations such
-                            as losing weight, staying physically active, or learning about an acute illness and
-                            adopt a better lifestyle.
-                        </p>
+                        <h3>Understanding the problem</h3>
+                        <p>At the beginning of my design process, I define the core problem I want to solve.</p>
+                        <h3>Problem definition</h3>
+                        <p>People who are under a lot of stress in their professional or personal lives need a way to
+                            adopt a better lifestyle with new goals and habits.</p>
+                        <p>We will know this is true when these people report that they are more relaxed in their daily
+                            lives and feel better psychologically.</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row-text">
                     <div>
                         <h3>Programms</h3>
                         <ul>
@@ -85,87 +100,155 @@
                         </ul>
                     </div>
                     <div>
-                        <h3>Timeline</h3>
+                        <h3>Time schedule</h3>
                         <ul>
-                            <li>Overall: 20+ weeks</li>
-                            <li>Discovery and Research: 12+ weeks</li>
-                            <li>Design and testing: 8 weeks</li>
+                            <li>Total: 20+ weeks</li>
+                            <li>Discovery & Research: 12+ weeks</li>
+                            <li>
+                                Design & Testing: 8 weeks</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>App language</h3>
+                        <ul>
+                            <li>English</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="line">
+                <h2>User Research</h2>
+                <div class="row-text">
+                    <div>
+                        <h3>Competitive analysis</h3>
+                        <p>Next, I want to find out what similar services and products are already on the market and how
+                            they solve the problem I want to solve.
+                            To this end, I analyzed and reviewed two potential competitors for my product, the Mindshine
+                            app and Remente app.
+                        </p>
+                        <p>What I liked most about the Mindshine app was that users were able to formulate their own
+                            goals in addition to set goals.
+                            This way, people can adopt new habits at their own pace without overwhelming themselves at
+                            the beginning.
+                        </p>
+                        <p>
+                            Based on this research, I created user stories to drive my app project.</p>
+                    </div>
+                    <div>
+                        <h3>User Stories</h3>
+                        <ul class="spaced-list">
+                            <li>As a user, I want to be able to search and find other features of the app in an easy to
+                                understand menu when I need them to give me new ideas for new goals.</li>
+                            <li>As a user who uses the app daily, I would like to have a calendar feature that allows me
+                                to track my last few days to give me an overview of my performance so far.</li>
+                            <li>As a user, I would like to receive daily tips and advice from the app to learn more
+                                about health and develop new habits on a daily basis.</li>
+                            <li>When I create an account, I want to have an onboarding process to get to know the app
+                                better so I can use it more effectively.</li>
+                            <li>When I load a new health app on my phone, I want to get through the sign-up process
+                                quickly so I can get help and advice as soon as possible.</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>User Interviews</h3>
+                <div class="row-text">
+                    <p>To further explore the problem area, I conducted 4 Skype interviews with users from the
+                        target group and used affinity mapping to organize the data and capture the results.
+                    </p>
+                    <div></div>
+                </div>
+                <div class="row-text">
+                    <div>
+                        <h4>Research objectives</h4>
+                        <ol>
+                            <li>To determine the wants and needs that led them to download a health or fitness app.</li>
+                            <li>to understand how users feel when they succeed in integrating new habits into their
+                                daily lives and achieving their set goals</li>
+                            <li>deeper understanding of how users learn about health and fitness, and what motivates
+                                them and plays a role in doing so.</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h4>Key insights</h4>
+                        <p>All respondents downloaded health or fitness apps for different reasons. Motives include
+                            losing weight, staying physically active or finding out about an acute illness.
+                            Many of the users also said they were not motivated enough to use an app regularly over a
+                            longer period of time.</p>
+                        <p>The key to arousing their interest in a health app is through an individualized
+                            questionnaire.
+                            This ensures that the app responds to the user's wishes and needs and suggests suitable
+                            goals and advice. This can be achieved through a personalized questionnaire.
+                            In order to constantly maintain motivation, it also makes sense to integrate a reward
+                            system.</p>
+                    </div>
+                </div>
+                <hr class="line">
+                <h2>Concept</h2>
+                <div class="row-text">
+                    <div>
+                        <h3>User Personas</h3>
+                        <p>The use of qualitative and quantitative research methods proved to be an excellent means of
+                            identifying the characteristic needs and goals of the user group I was targeting.
+                        </p>
+                        <p>These personas formed the basis for my information hierarchy and the general flow of the app,
+                            which was tailored to their goals and needs.
+                            This helped me empathize with my target audience and create two user personas: Mark and
+                            Jenny.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row two-images">
+                    <img src="img/olive_project_user_persona_mark.png" alt="user persona mark">
+                    <img src="img/olive_project_user_persona_jenny.png" alt="user persona jenny">
+                </div>
+                <div class="row-text">
+                    <div>
+                        <h2>Task analysis and user flow</h2>
+                        <p>From the perspective of my user personas, I created the user journeys, task analysis, and
+                            user
+                            flows for the key features of my app.
+                        </p>
+                        <h4>User Journeys</h4>
+                        <p>I had created user journey maps for my user personas Mark and Jenny.
+                            This way, I could put myself in their shoes and get a better idea of how they want to
+                            achieve
+                            their goals.
+                        </p>
+                    </div>
+                    <div>
+                        <h4>User Flow</h4>
+                        <p>User flow was especially important in determining the scene needed and the general concept of
+                            a
+                            site map</p>
+                        <h4>Task Analysis</h4>
+                        <ul>
+                            <li>Task: search for goals against burnout in the goal setting menu and manage notifications
+                                in
+                                the profile.</li>
+                            <li>Entry point: open the web app</li>
+                            <li>Success Criteria: Goal(s) accepted and notifications enabled.</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
         <section>
-            <div class="container">
-                <h2>User Research</h2>
-                <p>I started with the competitive analysis and analyzed similar apps on the market in more
-                    detail. These provided me with a lot of useful insights into the features, structure and design
-                    solutions of the apps.
-                    Then I wrote user stories and job stories to make sure that my features are based on what the users
-                    want.
-                </p>
-                <div class="row">
-                    <div>
-                        <h3>Interviews</h3>
-                        <p>To further explore the problem area, I conducted 4 Skype interviews with users from the
-                            target audience and used Affinity Mapping to organize the data and capture the results
-                        </p>
-                    </div>
-                    <div>
-                        <h3>Research objectives</h3>
-                        <ol>
-                            <li>determining the wants and needs that led them to download a health or
-                                fitness app.</li>
-                            <li>deeper understanding of how users learn about health and fitness, and
-                                what motivates them and plays a role in doing so.</li>
-                            <li>understanding how users feel when they succeed in integrating new
-                                habits into their daily lives and achieving their set goals.</li>
-                        </ol>
-                        <a class="button secondary-button"
-                            href="https://www.canva.com/design/DAFHKT8Ogdg/fAM51U9tYbBq73yeq9_6yQ/view?utm_content=DAFHKT8Ogdg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
-                            target="_blank">Affinity Map</a>
+            <div class="row-text">
+                <div class="container">
+                    <hr class="line">
+                    <h2>Ideation</h2>
+                    <div class="row two-images">
+                        <img src="img/olive_project_user_journey_mark.png" alt="user journey mark">
+                        <img src="img/olive_project_user_journey_jenny.png" alt="user journey jenny">
                     </div>
                 </div>
             </div>
         </section>
         <section>
             <div class="container">
-                <h2>Concept</h2>
-                <h3>User Personas</h3>
-                <p>The use of qualitative and quantitative research methods proved to be an excellent means of
-                    identifying the characteristic needs and goals of the user group I was targeting.
-                </p>
-                <p>This helped me to put myself in the shoes of my target group and create two user personas: Mark
-                    and Jenny
-                </p>
-                <div class="row two-images">
-                    <img src="img/olive_project_user_persona_mark.png" alt="user persona mark">
-                    <img src="img/olive_project_user_persona_jenny.png" alt="user persona jenny">
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <h2>Ideation</h2>
-                <h3>User Journeys</h3>
-                <p>After gathering all the necessary information about the users and understanding their needs, I
-                    created a user flow
-                </p>
-                <ul>
-                    <li><b>Task:</b>search for goals against burnout in the goal setting menu and
-                        manage notifications in the profile</li>
-                    <li><b>Entry point:</b>open the web app</li>
-                    <li><b>Success Criteria:</b>Goal(s) accepted and notifications enabled.
-                    </li>
-                </ul>
-                <div class="row two-images">
-                    <img src="img/olive_project_user_journey_mark.png" alt="user journey mark">
-                    <img src="img/olive_project_user_journey_jenny.png" alt="user journey jenny">
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
+                <hr class="line">
                 <h2>Wireframes and Prototype</h2>
                 <p>After interviewing users and gathering all the information needed to understand the user and
                     their needs, I created a paper prototype
@@ -174,48 +257,93 @@
                     take. As I gained a deeper understanding of the concept, I created medium quality wireframes
                     that I then merged into an initial prototype in Adobe XD/Figma.
                 </p>
-                <img src="img/olive_project_fidelity_book_an_appointment.png" alt="low and high fidelity wireframes">
-                <h3>Usability Testing</h3>
-                <p>The only way to verify the usefulness of a design or prototype is to test it with real
-                    people. For this reason, I conducted a
-                    preference test on Usability Hub. This was to find out which design of physician information
-                    would resonate better with participants.
-                    There were 11 participants in total. Also, basic functions were to be tested:
-                </p>
-                <ol>
-                    <li>Test how easy it is for the new user to log in. Are there any
-                        friction points or hesitation in disclosing information?</li>
-                    <li>Can the user follow the onboarding information and set and
-                        view their first new destination?</li>
-                    <li>How easy is it to book a call with a doctor? Are all the options
-                        given that the user wants?</li>
-                    <li>Does the user understand how to keep the booked
-                        appointment with the doctor?</li>
-                </ol>
+                <img class="row-text" src="img/olive_project_fidelity_book_an_appointment.png"
+                    alt="low and high fidelity wireframes">
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div>
+                    <h2>Usability Testing</h2>
+                    <p>The only way to verify the usefulness of a design or prototype is to test it with real
+                        people. For this reason, I conducted a
+                        preference test on Usability Hub. This was to find out which design of physician information
+                        would resonate better with participants.
+                        There were 11 participants in total. Also, basic functions were to be tested:
+                    </p>
+                </div>
+                <div>
+                    <ol>
+                        <li>Test how easy it is for the new user to log in. Are there any
+                            friction points or hesitation in disclosing information?</li>
+                        <li>Can the user follow the onboarding information and set and
+                            view their first new destination?</li>
+                        <li>How easy is it to book a call with a doctor? Are all the options
+                            given that the user wants?</li>
+                        <li>Does the user understand how to keep the booked
+                            appointment with the doctor?</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container row-text">
                 <img class="project-picture" src="img/olive_project_testing.jpg.jpg" alt="A/B testing">
-
-                <h3>Final Screens and Mockups</h3>
-                <img src="img/olive_project_information_screens.png" alt="information screen">
-                <img src="img/olive_project_home_screen.png" alt="home screen">
-                <img src="img/olive_project_goal_menu.png" alt="goal menu">
-                <img src="img/olive_project_diary_feature.png" alt="diary feature">
-                <img src="img/olive_project_discover_fesature.png" alt="discover feature">
-
-
-                <h3>Comments</h3>
-                <p>There were many comments in general about my OLIVE prototype. These comments encouraged me in
-                    what I was doing and show that I
-                    was on the right track with my prototype. After the course was finished, I continued to
-                    develop my prototype privately. In Figma I
-                    reworked it a bit and added some animations.
-                </p>
-                <img class="project-picture" src="img/olive_project_comments.png" alt="comments">
-
-
-                <h3>Prototype</h3>
-                <a class="button primary-button"
-                    href="https://www.figma.com/proto/JUJVK3aKlLyoq8AsKf203m/OLIVE-App?page-id=2%3A2&type=design&node-id=93-2424&viewport=380%2C1530%2C0.34&scaling=scale-down&starting-point-node-id=93%3A2424"
-                    target="_blank">Go to Prototype</a>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <hr class="line">
+                <h2>Final Screens and Mockups</h2>
+                <div class="row-text">
+                    <div>
+                        <img src="img/olive_project_discover_fesature.png" alt="discover feature">
+                    </div>
+                    <div>
+                        <img src="img/olive_project_home_screen.png" alt="home screen">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container row-text">
+                <div>
+                    <img src="img/olive_project_goal_menu.png" alt="goal menu">
+                </div>
+                <div>
+                    <img src="img/olive_project_diary_feature.png" alt="diary feature">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <hr class="line">
+                <h2>Conclusion</h2>
+                <div class="row-text">
+                    <div>
+                        <h3>Trust in the process</h3>
+                        <p>Like many designers, I'm always tempted to jump right into the visual design and start too
+                            early with the UI details.
+                            Applying design thinking to his project reminded me once again that not every phase of a
+                            project needs to be perfect before moving on.
+                        </p>
+                        <p>Incremental improvements based on feedback from real users are at the heart of the iterative
+                            process. Design is never finished,
+                            but working on the Olive project showed me that trusting the process is worthwhile and also
+                            helped me internalize that done is better than perfect.</p>
+                    </div>
+                    <div>
+                        <h3>Credits</h3>
+                        <p>I developed Olive as part of the Carrerfoundry UX Immersion Course.
+                            It was a hard piece of work, but I am very happy with the result and hope for many more
+                            exciting UX projects.
+                        </p>
+                        <p>A big thank you to my family for the great support and motivation during this project. And
+                            also a huge thank you to my friends
+                            and all the other UX designers from the CF community who sacrificed their valuable time to
+                            participate in my testing.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

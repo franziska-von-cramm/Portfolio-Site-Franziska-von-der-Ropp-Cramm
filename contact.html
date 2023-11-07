@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/utils.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,8 +23,9 @@
         <div class="container">
             <div class="header-row">
                 <a href="index.html">
-                    <img class="logo" id="logo" src="img/logo_Franziska_von_der_Ropp_Cramm.svg" alt="logo">
-                    <img class="logo" id="small-logo" src="img/logo_small_Franziska_von_der_Ropp_Cramm.svg" alt="logo">
+                    <img class="logo" id="logo" src="img/logo_Franziska_von_der_Ropp_Cramm.svg" alt="personal logo">
+                    <img class="logo" id="small-logo" src="img/logo_small_Franziska_von_der_Ropp_Cramm.svg"
+                        alt="personal small logo">
                 </a>
                 <i class="fa-solid fa-bars hamburger fa-2xl" onclick="toggleNavMenu()"></i>
             </div>
@@ -37,41 +39,54 @@
         </div>
     </header>
     <main>
+        <section id="hero">
+            <div class="container">
+                <div class="row-project">
+                    <img class="profile-picture" src="img\profilephoto.png" alt="profile picture website">
+                    <div class="project-header-content">
+                        <h1>Contact</h1>
+                        <div class="subtitle">Let's Talk</div>
+
+                        <div class="flex-grow"></div>
+                        <div class="flex gap-1 align-self-end">
+                            <a href="https://www.linkedin.com/in/franziska-von-der-ropp-cramm-749a36255/"
+                                target="_blank">
+                                <img class="small-img" src="img/linkedin_social_icon.svg" alt="linkedin logo">
+                            </a>
+                            <a href="https://www.xing.com/profile/Franziska_vderRoppCramm/cv?expandNeffi=true"
+                                target="_blank">
+                                <img class="small-img" src="img/xing.png" alt="xing logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+        </section>
         <section>
             <div class="container">
-                <h1>Contact</h1>
-                <div>
-                    <a href="https://www.linkedin.com/in/franziska-von-der-ropp-cramm-749a36255/" target="_blank">
-                        <img class="small-img" src="img/linkedin_social_icon.svg">
-                    </a>
-                    <a href="https://www.xing.com/profile/Franziska_vderRoppCramm/cv?expandNeffi=true" target="_blank">
-                        <img class="small-img" src="img/xing.png">
-                    </a>
-                </div>
-                <div>
-                    <p>Do you like my work and want to discuss opportunities? Please get in touch.</p>
-
-                    <form action="action_page.php">
-
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                        <label for="your Message">Your Message</label>
-                        <textarea id="subject" class="override-textarea" name="subject" placeholder="Write a message.."
-                            style="height:200px"></textarea>
+                <h2>Write me a E-Mail</h2>
+                <div class="row-text">
+                    <div class="flex-grow">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name..">
+                        <label for="e-mail">E-Mail</label>
+                        <input type="text" id="e-mail" name="email" placeholder="Your Email..">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject..">
+                    </div>
+                    <div class="flex-grow">
+                        <label for="your-message">Your Message</label>
+                        <textarea id="your-message" class="override-textarea" name="subject"
+                            placeholder="Write a message.." style="height:276px"></textarea>
                         <div class="row">
                             <input type="submit" value="Submit">
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <img class="quote" src="img\quote_image.png" alt="quote image">
         <div class="container">
             <p>© Franziska v. der Ropp-Cramm 2023</p>
         </div>

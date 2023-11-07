@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/utils.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,8 +23,9 @@
         <div class="container">
             <div class="header-row">
                 <a href="index.html">
-                    <img class="logo" id="logo" src="img/logo_Franziska_von_der_Ropp_Cramm.svg" alt="logo">
-                    <img class="logo" id="small-logo" src="img/logo_small_Franziska_von_der_Ropp_Cramm.svg" alt="logo">
+                    <img class="logo" id="logo" src="img/logo_Franziska_von_der_Ropp_Cramm.svg" alt="personal logo">
+                    <img class="logo" id="small-logo" src="img/logo_small_Franziska_von_der_Ropp_Cramm.svg"
+                        alt="personal small logo">
                 </a>
                 <i class="fa-solid fa-bars hamburger fa-2xl" onclick="toggleNavMenu()"></i>
             </div>
@@ -39,46 +41,64 @@
     <main>
         <section id="hero">
             <div class="container">
-                <h1>Hi my name is Franziska <span> I'm a UX/UI Designer in Pforzheim, Germany</span></h1>
-                <p>Here are my works as UI/UX designer listed</p>
+                <div class="row-project">
+                    <img class="profile-picture" src="img\profilephoto.png" alt="profile picture website">
+                    <div class="project-header-content">
+                        <h1 class="main-title">Hi, I'm
+                            <span>Franziska v. der Ropp-Cramm</span>
+                        </h1>
+                        <h3>UI/UX Designer</h3>
+                        <div class="flex-grow"></div>
+                        <div class="flex gap-1 align-self-end">
+                            <a href="https://www.linkedin.com/in/franziska-von-der-ropp-cramm-749a36255/"
+                                target="_blank">
+                                <img class="small-img" src="img/linkedin_social_icon.svg" alt="linkedin logo">
+                            </a>
+                            <a href="https://www.xing.com/profile/Franziska_vderRoppCramm/cv?expandNeffi=true"
+                                target="_blank">
+                                <img class="small-img" src="img/xing.png" alt="xing logo"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section>
-            <div class="container">
-                <div class="row card" id="project-1">
-                    <div class="column col-md-6 col-lg-7">
+            <hr class="line">
+
+            <div class="container project-card-container">
+                <div class="project-card" id="project-1">
+                    <div class="project-card__img">
                         <img src="img/Olive-project-cover.png" alt="project cover olive app">
+                        <a href="oliveproject.html" class="button primary-button">Go to Project</a>
                     </div>
-                    <div class="column col-md-6 col-lg-5 project-description">
-                        <h2 class="no-margin">Olive Project</h2>
-                        <p>UX Design Course Feb. - Juli 2022</p>
-                        <h4 class="no-margin">Relevant Skills and Tools</h4>
-                        <ul>
-                            <li>Adobe XD</li>
-                            <li>Figma</li>
-                            <li>InVision</li>
-                        </ul>
-                        <a href="oliveproject.html" class="button primary-button">Olive Project</a>
+                    <div class="project-card__content">
+                        <h2 class="no-margin project-card__content__title">Olive Project</h2>
+                        <h4 class="no-margin project-card__content__subtitle">UX Design Course</h4>
+                        <p class="no-margin project-card__content__date">Feb - Jul 2022</p>
+                        <div class="project-card__content__tools flex gap-1">
+                            <img class="small-img" src="img\miro_logo.svg" alt="miro_logo">
+                            <img class="small-img" src="img\figma_logo.png" alt="figma_logo">
+                        </div>
                     </div>
                 </div>
-                <div class="row card" id="project-2">
-                    <div class="column col-md-6 col-lg-7">
+                <div class="project-card" id="project-2">
+                    <div class="project-card__img">
                         <img src="img/everme-project_cover.png.PNG" alt="project cover image everme website">
+                        <a href="everme.html" class="button primary-button">Go to Project</a>
                     </div>
-                    <div class="column col-md-6 col-lg-5 project-description">
-                        <h2 class="no-margin">EverMe</h2>
-                        <p>Voluntary website project 2021 - 2022</p>
-                        <h4 class="no-margin">Relevant Skills and Tools</h4>
-                        <ul>
-                            <li>Adobe XD</li>
-                            <li>Figma</li>
-                            <li>InVision</li>
-                        </ul>
-                        <a href="everme.html" class="button primary-button">EverMe Project</a>
+                    <div class="project-card__content">
+                        <h2 class="no-margin project-card__content__title">EverMe</h2>
+                        <h4 class="no-margin project-card__content__subtitle">Voluntary website project</h4>
+                        <p class="no-margin project-card__content__date">2021 - 2022</p>
+                        <div class="project-card__content__tools flex gap-1">
+                            <img class="small-img" src="img\miro_logo.svg" alt="miro_logo">
+                            <img class="small-img" src="img\figma_logo.png" alt="figma_logo">
+                            <img class="small-img" src="img\XD_logo.png" alt="xd_logo">
+                        </div>
                     </div>
                 </div>
-                <div class="row card" id="project-3">
-                    <div class="column col-md-6 col-lg-7">
+                <div class="project-card" id="project-3">
+                    <div class="project-card__img">
                         <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration"
                             height="auto" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <defs>
@@ -1528,15 +1548,15 @@
                             </g>
                         </svg>
                     </div>
-                    <div class="column col-md-6 col-lg-5 project-description">
-                        <h2 class="no-margin">CSS Animation</h2>
-                        <p>Frontend Development for Designers Course Sep. - Nov. 2023</p>
-                        <h4 class="no-margin">Relevant Skills and Tools</h4>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                        </ul>
+                    <div class="project-card__content">
+                        <h2 class="no-margin project-card__content__title">CSS Animation</h2>
+                        <h4 class="no-margin project-card__content__subtitle">Frontend Development for Designers Course
+                        </h4>
+                        <p class="no-margin project-card__content__date">Sep - Nov 2023</p>
+                        <div class="project-card__content__tools flex gap-1">
+                            <img class="small-img" src="img\html_logo.png" alt="html_logo">
+                            <img class="small-img" src="img\css_logo.png" alt="css_logo">
+                        </div>
                     </div>
                 </div>
             </div>
