@@ -32,7 +32,6 @@ body {
 .row-text {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
     margin: 1.5rem 0;
 }
 
@@ -262,7 +261,6 @@ svg {
 
 .project-header-content h1 {
     color: #00576b;
-    font-size: 4rem;
 }
 
 .project-header-content .subtitle {
@@ -279,16 +277,14 @@ svg {
 
 .small-img {
     width: 30px;
+
 }
 
 .two-images {
     display: flex;
+    border: 1.5px solid #e1e7e7;
     gap: 1rem;
     overflow: auto;
-}
-
-.two-images img {
-    max-width: 80vw;
 }
 
 .quote {
@@ -481,6 +477,10 @@ input[type=submit]:hover {
         grid-template-columns: 1fr 1fr;
     }
 
+    .project-header-content h1 {
+        font-size: 2.5rem;
+    }
+
     header {
         text-align: unset;
     }
@@ -520,7 +520,10 @@ input[type=submit]:hover {
     }
 
     .row-text {
+        display: flex;
         flex-direction: row;
+        gap: 3rem;
+        margin: 1.5rem 0;
     }
 
     .row-text>* {
@@ -530,6 +533,7 @@ input[type=submit]:hover {
     .row-project {
         flex-direction: row;
     }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -543,6 +547,11 @@ input[type=submit]:hover {
         width: 41.66%;
     }
 
+    .row-text {
+        gap: 5rem;
+
+    }
+
     .container {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -553,6 +562,15 @@ input[type=submit]:hover {
     .project-card {
         border: 3px solid #e1e7e7;
     }
+
+    .project-header-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .two-images img {
+        max-width: 60vw;
+    }
+
 }
 
 @media only screen and (min-width: 2100px) {
